@@ -1,0 +1,213 @@
+.seller-dashboard {
+    display: flex;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: rgba(233, 230, 230, 0.679);
+    min-width: 1280px;
+
+}
+
+.sidebar {
+    padding: 2rem 1rem;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    box-sizing: border-box;
+    background-color: rgb(47, 45, 45);
+    flex-direction: column;
+    color: white;
+
+    .logo {
+
+        h2 {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    label {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    ul.navs {
+        
+        
+
+        li {
+            font-size: 15px;
+            letter-spacing: 1px;
+            margin: .5rem 0;
+        }
+    }
+
+
+    hr {
+        margin: 1rem 0;
+    }
+
+}
+
+
+.main-content {
+    display: flex;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    h1.heading {
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 2px;
+        font-family: Segoe UI;
+    }
+
+}
+
+.dashboard-home {
+
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+
+
+    .left {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 10px;
+        border: 1.5px solid black;
+    }
+
+    .right {
+        width: 45%;
+
+        .tips {
+            border: 1px solid black ;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-left: 10rem;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.s-text {
+    color: gray;
+    font-size: 19px;
+
+}
+
+.add-products-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    form.product-form {
+        overflow: scroll;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 6rem;
+        margin-top: 5vh;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .d {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            width: 100%;
+
+            label {
+                color: black;
+                font-size: 14px;
+                font-family: sans-serif;
+                letter-spacing: 1px;
+                margin-bottom: 8px;
+            }
+            
+            input {
+                width: 50%;
+                background: none;
+                border: 1.2px solid black;
+                padding: .3rem 1rem;
+                border-radius: 5px;
+                font-size: 17px;
+                color: black;
+                outline: none;
+
+                &::placeholder {
+                    color: gray;
+                }
+            }
+
+            textarea {
+                color: gray;
+                background: none;
+                outline: none;
+                border: 1.2px solid gray;
+                border-radius: 5px;
+                resize: none;
+                width: 100%;
+                margin-bottom: 2rem;
+                padding: 1rem;
+            }
+
+        }
+
+    }    
+
+    .btns {
+
+        .save {
+            color: white;
+            background-color: black;
+            padding: 5px 15px;           
+            border-radius: 8px;
+            font-family: sans-serif;
+            margin-right: 1rem;
+            box-shadow: 0px 0px 5px gray;
+        }
+
+        .add-another {
+            color: black;
+            background-color: white;
+            padding: 5px 15px;           
+            border-radius: 8px;
+            font-family: sans-serif;
+            margin-right: 1rem;
+            box-shadow: 0px 0px 5px gray;
+        }
+        
+        .cancel-btn {
+            color: white;
+            background-color: red;
+            padding: 5px 15px;           
+            border-radius: 8px;
+            font-family: sans-serif;
+            margin-right: 1rem;
+            box-shadow: 0px 0px 5px gray;
+
+        }
+    }
+
+}
